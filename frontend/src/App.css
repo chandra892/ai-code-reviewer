@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  background-color: #343434;
+  font-family: 'Fira Code', monospace;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main .left, .right {
+  height: 100%;
+  flex-basis: 50%;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+
+main .left {
+  background-color: #1e1e1e;
+  position: relative;
+  border: 1px solid #e4dcdc;
+}
+
+.left .code {
+  height: calc(100% - 60px);
+  width: 100%;
+  background-color: #1e1e1e;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.code pre {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: visible;
+  padding-right: 1rem;
+}
+
+.code pre code {
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  display: block;
+  min-height: 100%;
+}
+
+.code-editor {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  padding-right: 1rem;
+}
+
+.code-highlight {
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+  padding-right: 1rem;
+}
+
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #e6f2e6;
+  color: rgb(10, 10, 10);
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+main .left .review:hover {
+  background-color: #45a049;
+}
+
+main .right {
+  background-color: #2d2d2d;
+  color: #f5f5f5;
+  height: 100%;
+  padding: 1rem;
+  font-size: 14px;
+  overflow-y: auto;
+  line-height: 1.6;
+}
+
+.markdown-body {
+  max-width: 100%;
+}
+
+.markdown-body pre {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.markdown-body code {
+  font-family: 'Fira Code', monospace;
+  font-size: 13px;
+}
+
+.markdown-body h1, .markdown-body h2, .markdown-body h3 {
+  margin: 1.5rem 0 1rem 0;
+  color: #f5f5f5;
+}
+
+.markdown-body p {
+  margin: 1rem 0;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.2rem;
+  color: #f5f5f5;
+}
+
+.copy-button {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+  background-color: #45a049;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.2rem;
+  color: #f5f5f5;
+}
+
+.copy-button {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+  background-color: #45a049;
+}
